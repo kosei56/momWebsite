@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gallery
+{% endblock %}
+
+{% block main %}
+    <!-- discription -->
+	<section id="gallery">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9 col-sm-11">
+                <p class="lead my-4 text-dark my_message">西洋カリグラフィーの論理性や規則性をベースに、日本の不完全性なものに美を見出す表現を紙面に取り入れる
+                    ー完全なバランスをどこかで崩し、余白を楽しむ。動きや表情のある一度きりのラインー</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col text-center">
+                    <h2>Caligraphy Works</h2>
+                </div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../static/art_work1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../static/art_work2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../static/art_work3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+    </section>
+
+{% endblock %}

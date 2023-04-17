@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apply
+{% endblock %}
+
+{% block main %}
+    <!-- form to apply-->
+    <section id="form">
+        <div class="container">
+            
+            <form>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-5 col-lg-4 text-start">
+                        <label for="kanji_sei" class="form-label small">漢字性:</label>
+                        <input type="text" class="form-control" placeholder="漢字性" aria-label="Last Name" id="kanji_sei">
+                    </div>
+                    <div class="col-5 col-lg-4 text-start">
+                        <label for="kanji_na" class="form-label small">漢字名:</label>
+                        <input type="text" class="form-control" placeholder="漢字名" aria-label="First Name" id="kanji_na">
+                    </div>
+                </div>
+                <div class="row g-3 justify-content-center mt-3">
+                    <div class="col-5 col-lg-4 text-start">
+                        <label for="kana_sei" class="form-label small">カナ性:</label>
+                        <input type="text" class="form-control" placeholder="カナ性" aria-label="Last Name" id="kana_sei">
+                    </div>
+                    <div class="col-5 col-lg-4 text-start">
+                        <label for="kana_na" class="form-label small">カナ名:</label>
+                        <input type="text" class="form-control" placeholder="カナ名" aria-label="First Name" id="kana_na">
+                    </div>
+                </div>
+                
+                <div class="row g-3 mt-3 justify-content-center">
+                    <div class="col-10 col-lg-8 text-start justify-content-center">
+                        <label for="inputEmail" class="form-label small">Email:</label>
+                        <input type="email" class="form-control" placeholder="email" id="inputEmail">
+                    </div>
+
+                    <div class="col-10 col-lg-8 text-start">
+                        <label for="classType" class="form-label small">希望クラス:</label>
+                        <select class="form-select" aria-label="Default select example" id="classType">
+                            <option selected>選択</option>
+                            <option value="1">レギュラークラス</option>
+                            <option value="2">ブラッシュクラス</option>
+                        </select>
+                    </div>
+                </div>  
+                
+                <div class="col-12 mt-3">
+                    <button type="submit" class="my-button">申し込む</button>
+                </div>              
+              </form>
+        </div>
+
+    </section>    
+
+{% endblock %}
